@@ -5,6 +5,6 @@
 #define MATRIX_COL_PINS { F6, F7, B1, B3, B2, B6 }
 #define DIODE_DIRECTION COL2ROW
 
-#define TAPPING_TERM 100
+#define TAPPING_TERM 300
 
 #define TAP_CODE_DELAY 10
