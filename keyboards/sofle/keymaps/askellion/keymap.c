@@ -32,8 +32,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|       |    |       |------+------+------+------+------+------|
  * |LShift|   Y  |   X  |   C  |   V  |   B  |-------|    |-------|   N  |   M  |   ,  |   .  |   -  |RShift|
  * `-----------------------------------------/       /     \      \-----------------------------------------'
- *            | LGUI | LAlt |  M4  | STRG | /Enter  /       \Enter \  |Space |  M4  | RAlt | RGUI |
- *            |      |      |      |      |/       /         \      \ |      |      |      |      |
+ *            | LGUI | LAlt |  M4  | STRG | /Enter  /       \Enter \  |STRG  |  M4  | RAlt | RGUI |
+ *            |      |      | Space| Space|/       /         \      \ |Space | Space|      |      |
  *            `----------------------------------'           '------''---------------------------'
  */
 
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                      DE_Z,    KC_U,    KC_I,    KC_O,    KC_P,  DE_UE,
   MO(_M3),  KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                      KC_H,    KC_J,    KC_K,    KC_L,   DE_OE,  LT(_M3,DE_AE),
   KC_LSFT,  DE_Y,   KC_X,    KC_C,    KC_V,    KC_B, XXXXXXX,     XXXXXXX,KC_N,    KC_M, KC_COMM,  KC_DOT, DE_MINS,  KC_RSFT,
-                 KC_LGUI,KC_LALT,MO(_M4), KC_LCTL, KC_ENT,      KC_ENT, KC_SPC, MO(_M4), KC_RALT, KC_RGUI
+                 KC_LGUI,KC_LALT,LT(_M4,KC_SPC), LCTL_T(KC_SPC), KC_ENT,      KC_ENT, RCTL_T(KC_SPC), LT(_M4,KC_SPC), KC_RALT, KC_RGUI
 ),
 /* SYMBOL (Symbol layer - NEO layer 3)
  * ,-----------------------------------------.                    ,-----------------------------------------.
